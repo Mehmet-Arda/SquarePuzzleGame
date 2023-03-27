@@ -1,0 +1,773 @@
+.common-animation, .zero-to-zero, .zero-to-one, .zero-to-two, .zero-to-three, .zero-to-four, .zero-to-five, .zero-to-six, .zero-to-seven, .zero-to-eight, .zero-to-nine, .zero-to-ten, .zero-to-eleven, .zero-to-twelve, .zero-to-thirteen, .zero-to-fourteen, .zero-to-fifteen, .one-to-zero, .one-to-one, .one-to-two, .one-to-three, .one-to-four, .one-to-five, .one-to-six, .one-to-seven, .one-to-eight, .one-to-nine, .one-to-ten, .one-to-eleven, .one-to-twelve, .one-to-thirteen, .one-to-fourteen, .one-to-fifteen, .two-to-zero, .two-to-one, .two-to-two, .two-to-three, .two-to-four, .two-to-five, .two-to-six, .two-to-seven, .two-to-eight, .two-to-nine, .two-to-ten, .two-to-eleven, .two-to-twelve, .two-to-thirteen, .two-to-fourteen, .two-to-fifteen, .three-to-zero, .three-to-one, .three-to-two, .three-to-three, .three-to-four, .three-to-five, .three-to-six, .three-to-seven, .three-to-eight, .three-to-nine, .three-to-ten, .three-to-eleven, .three-to-twelve, .three-to-thirteen, .three-to-fourteen, .three-to-fifteen, .four-to-zero, .four-to-one, .four-to-two, .four-to-three, .four-to-four, .four-to-five, .four-to-six, .four-to-seven, .four-to-eight, .four-to-nine, .four-to-ten, .four-to-eleven, .four-to-twelve, .four-to-thirteen, .four-to-fourteen, .four-to-fifteen, .five-to-zero, .five-to-one, .five-to-two, .five-to-three, .five-to-four, .five-to-five, .five-to-six, .five-to-seven, .five-to-eight, .five-to-nine, .five-to-ten, .five-to-eleven, .five-to-twelve, .five-to-thirteen, .five-to-fourteen, .five-to-fifteen, .six-to-zero, .six-to-one, .six-to-two, .six-to-three, .six-to-four, .six-to-five, .six-to-six, .six-to-seven, .six-to-eight, .six-to-nine, .six-to-ten, .six-to-eleven, .six-to-twelve, .six-to-thirteen, .six-to-fourteen, .six-to-fifteen, .seven-to-zero, .seven-to-one, .seven-to-two, .seven-to-three, .seven-to-four, .seven-to-five, .seven-to-six, .seven-to-seven, .seven-to-eight, .seven-to-nine, .seven-to-ten, .seven-to-eleven, .seven-to-twelve, .seven-to-thirteen, .seven-to-fourteen, .seven-to-fifteen, .eight-to-zero, .eight-to-one, .eight-to-two, .eight-to-three, .eight-to-four, .eight-to-five, .eight-to-six, .eight-to-seven, .eight-to-eight, .eight-to-nine, .eight-to-ten, .eight-to-eleven, .eight-to-twelve, .eight-to-thirteen, .eight-to-fourteen, .eight-to-fifteen, .nine-to-zero, .nine-to-one, .nine-to-two, .nine-to-three, .nine-to-four, .nine-to-five, .nine-to-six, .nine-to-seven, .nine-to-eight, .nine-to-nine, .nine-to-ten, .nine-to-eleven, .nine-to-twelve, .nine-to-thirteen, .nine-to-fourteen, .nine-to-fifteen, .ten-to-zero, .ten-to-one, .ten-to-two, .ten-to-three, .ten-to-four, .ten-to-five, .ten-to-six, .ten-to-seven, .ten-to-eight, .ten-to-nine, .ten-to-ten, .ten-to-eleven, .ten-to-twelve, .ten-to-thirteen, .ten-to-fourteen, .ten-to-fifteen, .eleven-to-zero, .eleven-to-one, .eleven-to-two, .eleven-to-three, .eleven-to-four, .eleven-to-five, .eleven-to-six, .eleven-to-seven, .eleven-to-eight, .eleven-to-nine, .eleven-to-ten, .eleven-to-eleven, .eleven-to-twelve, .eleven-to-thirteen, .eleven-to-fourteen, .eleven-to-fifteen, .twelve-to-zero, .twelve-to-one, .twelve-to-two, .twelve-to-three, .twelve-to-four, .twelve-to-five, .twelve-to-six, .twelve-to-seven, .twelve-to-eight, .twelve-to-nine, .twelve-to-ten, .twelve-to-eleven, .twelve-to-twelve, .twelve-to-thirteen, .twelve-to-fourteen, .twelve-to-fifteen, .thirteen-to-zero, .thirteen-to-one, .thirteen-to-two, .thirteen-to-three, .thirteen-to-four, .thirteen-to-five, .thirteen-to-six, .thirteen-to-seven, .thirteen-to-eight, .thirteen-to-nine, .thirteen-to-ten, .thirteen-to-eleven, .thirteen-to-twelve, .thirteen-to-thirteen, .thirteen-to-fourteen, .thirteen-to-fifteen, .fourteen-to-zero, .fourteen-to-one, .fourteen-to-two, .fourteen-to-three, .fourteen-to-four, .fourteen-to-five, .fourteen-to-six, .fourteen-to-seven, .fourteen-to-eight, .fourteen-to-nine, .fourteen-to-ten, .fourteen-to-eleven, .fourteen-to-twelve, .fourteen-to-thirteen, .fourteen-to-fourteen, .fourteen-to-fifteen, .fifteen-to-zero, .fifteen-to-one, .fifteen-to-two, .fifteen-to-three, .fifteen-to-four, .fifteen-to-five, .fifteen-to-six, .fifteen-to-seven, .fifteen-to-eight, .fifteen-to-nine, .fifteen-to-ten, .fifteen-to-eleven, .fifteen-to-twelve, .fifteen-to-thirteen, .fifteen-to-fourteen, .fifteen-to-fifteen {
+  transition: transform 1s ease-in-out;
+  /* transition-delay: 2s; */ }
+
+.zero-to-zero {
+  transform: translate(0px, 0px); }
+
+.zero-to-one {
+  transform: translate(155px, 0px); }
+
+.zero-to-two {
+  transform: translate(310px, 0px); }
+
+.zero-to-three {
+  transform: translate(465px, 0px); }
+
+.zero-to-four {
+  transform: translate(0px, 155px); }
+
+.zero-to-five {
+  transform: translate(155px, 155px); }
+
+.zero-to-six {
+  transform: translate(310px, 155px); }
+
+.zero-to-seven {
+  transform: translate(465px, 155px); }
+
+.zero-to-eight {
+  transform: translate(0px, 310px); }
+
+.zero-to-nine {
+  transform: translate(155px, 310px); }
+
+.zero-to-ten {
+  transform: translate(310px, 310px); }
+
+.zero-to-eleven {
+  transform: translate(465px, 310px); }
+
+.zero-to-twelve {
+  transform: translate(0px, 465px); }
+
+.zero-to-thirteen {
+  transform: translate(155px, 465px); }
+
+.zero-to-fourteen {
+  transform: translate(310px, 465px); }
+
+.zero-to-fifteen {
+  transform: translate(465px, 465px); }
+
+.one-to-zero {
+  transform: translate(-155px, 0px); }
+
+.one-to-one {
+  transform: translate(0px, 0px); }
+
+.one-to-two {
+  transform: translate(155px, 0px); }
+
+.one-to-three {
+  transform: translate(310px, 0px); }
+
+.one-to-four {
+  transform: translate(-155px, 155px); }
+
+.one-to-five {
+  transform: translate(0px, 155px); }
+
+.one-to-six {
+  transform: translate(155px, 155px); }
+
+.one-to-seven {
+  transform: translate(310px, 155px); }
+
+.one-to-eight {
+  transform: translate(-155px, 310px); }
+
+.one-to-nine {
+  transform: translate(0px, 310px); }
+
+.one-to-ten {
+  transform: translate(155px, 310px); }
+
+.one-to-eleven {
+  transform: translate(310px, 310px); }
+
+.one-to-twelve {
+  transform: translate(-155px, 465px); }
+
+.one-to-thirteen {
+  transform: translate(0px, 465px); }
+
+.one-to-fourteen {
+  transform: translate(155px, 465px); }
+
+.one-to-fifteen {
+  transform: translate(310px, 465px); }
+
+.two-to-zero {
+  transform: translate(-310px, 0px); }
+
+.two-to-one {
+  transform: translate(-155px, 0px); }
+
+.two-to-two {
+  transform: translate(0px, 0px); }
+
+.two-to-three {
+  transform: translate(155px, 0px); }
+
+.two-to-four {
+  transform: translate(-310px, 155px); }
+
+.two-to-five {
+  transform: translate(-155px, 155px); }
+
+.two-to-six {
+  transform: translate(0px, 155px); }
+
+.two-to-seven {
+  transform: translate(155px, 155px); }
+
+.two-to-eight {
+  transform: translate(-310px, 310px); }
+
+.two-to-nine {
+  transform: translate(-155px, 310px); }
+
+.two-to-ten {
+  transform: translate(0px, 310px); }
+
+.two-to-eleven {
+  transform: translate(155px, 310px); }
+
+.two-to-twelve {
+  transform: translate(-310px, 465px); }
+
+.two-to-thirteen {
+  transform: translate(-155px, 465px); }
+
+.two-to-fourteen {
+  transform: translate(0px, 465px); }
+
+.two-to-fifteen {
+  transform: translate(155px, 465px); }
+
+.three-to-zero {
+  transform: translate(-465px, 0px); }
+
+.three-to-one {
+  transform: translate(-310px, 0px); }
+
+.three-to-two {
+  transform: translate(-155px, 0px); }
+
+.three-to-three {
+  transform: translate(0px, 0px); }
+
+.three-to-four {
+  transform: translate(-465px, 155px); }
+
+.three-to-five {
+  transform: translate(-310px, 155px); }
+
+.three-to-six {
+  transform: translate(-155px, 155px); }
+
+.three-to-seven {
+  transform: translate(0px, 155px); }
+
+.three-to-eight {
+  transform: translate(-465px, 310px); }
+
+.three-to-nine {
+  transform: translate(-310px, 310px); }
+
+.three-to-ten {
+  transform: translate(-155px, 310px); }
+
+.three-to-eleven {
+  transform: translate(0px, 310px); }
+
+.three-to-twelve {
+  transform: translate(-465px, 465px); }
+
+.three-to-thirteen {
+  transform: translate(-310px, 465px); }
+
+.three-to-fourteen {
+  transform: translate(-155px, 465px); }
+
+.three-to-fifteen {
+  transform: translate(0px, 465px); }
+
+.four-to-zero {
+  transform: translate(0px, -155px); }
+
+.four-to-one {
+  transform: translate(155px, -155px); }
+
+.four-to-two {
+  transform: translate(310px, -155px); }
+
+.four-to-three {
+  transform: translate(465px, -155px); }
+
+.four-to-four {
+  transform: translate(0px, 0px); }
+
+.four-to-five {
+  transform: translate(155px, 0px); }
+
+.four-to-six {
+  transform: translate(310px, 0px); }
+
+.four-to-seven {
+  transform: translate(465px, 0px); }
+
+.four-to-eight {
+  transform: translate(0px, 155px); }
+
+.four-to-nine {
+  transform: translate(155px, 155px); }
+
+.four-to-ten {
+  transform: translate(310px, 155px); }
+
+.four-to-eleven {
+  transform: translate(465px, 155px); }
+
+.four-to-twelve {
+  transform: translate(0px, 310px); }
+
+.four-to-thirteen {
+  transform: translate(155px, 310px); }
+
+.four-to-fourteen {
+  transform: translate(310px, 310px); }
+
+.four-to-fifteen {
+  transform: translate(465px, 310px); }
+
+.five-to-zero {
+  transform: translate(-155px, -155px); }
+
+.five-to-one {
+  transform: translate(0px, -155px); }
+
+.five-to-two {
+  transform: translate(155px, -155px); }
+
+.five-to-three {
+  transform: translate(310px, -155px); }
+
+.five-to-four {
+  transform: translate(-155px, 0px); }
+
+.five-to-five {
+  transform: translate(0px, 0px); }
+
+.five-to-six {
+  transform: translate(155px, 0px); }
+
+.five-to-seven {
+  transform: translate(310px, 0px); }
+
+.five-to-eight {
+  transform: translate(-155px, 155px); }
+
+.five-to-nine {
+  transform: translate(0px, 155px); }
+
+.five-to-ten {
+  transform: translate(155px, 155px); }
+
+.five-to-eleven {
+  transform: translate(310px, 155px); }
+
+.five-to-twelve {
+  transform: translate(-155px, 310px); }
+
+.five-to-thirteen {
+  transform: translate(0px, 310px); }
+
+.five-to-fourteen {
+  transform: translate(155px, 310px); }
+
+.five-to-fifteen {
+  transform: translate(310px, 310px); }
+
+.six-to-zero {
+  transform: translate(-310px, -155px); }
+
+.six-to-one {
+  transform: translate(-155px, -155px); }
+
+.six-to-two {
+  transform: translate(0px, -155px); }
+
+.six-to-three {
+  transform: translate(155px, -155px); }
+
+.six-to-four {
+  transform: translate(-310px, 0px); }
+
+.six-to-five {
+  transform: translate(-155px, 0px); }
+
+.six-to-six {
+  transform: translate(0px, 0px); }
+
+.six-to-seven {
+  transform: translate(155px, 0px); }
+
+.six-to-eight {
+  transform: translate(-310px, 155px); }
+
+.six-to-nine {
+  transform: translate(-155px, 155px); }
+
+.six-to-ten {
+  transform: translate(0px, 155px); }
+
+.six-to-eleven {
+  transform: translate(155px, 155px); }
+
+.six-to-twelve {
+  transform: translate(-310px, 310px); }
+
+.six-to-thirteen {
+  transform: translate(-155px, 310px); }
+
+.six-to-fourteen {
+  transform: translate(0px, 310px); }
+
+.six-to-fifteen {
+  transform: translate(155px, 310px); }
+
+.seven-to-zero {
+  transform: translate(-465px, -155px); }
+
+.seven-to-one {
+  transform: translate(-310px, -155px); }
+
+.seven-to-two {
+  transform: translate(-155px, -155px); }
+
+.seven-to-three {
+  transform: translate(0px, -155px); }
+
+.seven-to-four {
+  transform: translate(-465px, 0px); }
+
+.seven-to-five {
+  transform: translate(-310px, 0px); }
+
+.seven-to-six {
+  transform: translate(-155px, 0px); }
+
+.seven-to-seven {
+  transform: translate(0px, 0px); }
+
+.seven-to-eight {
+  transform: translate(-465px, 155px); }
+
+.seven-to-nine {
+  transform: translate(-310px, 155px); }
+
+.seven-to-ten {
+  transform: translate(-155px, 155px); }
+
+.seven-to-eleven {
+  transform: translate(0px, 155px); }
+
+.seven-to-twelve {
+  transform: translate(-465px, 310px); }
+
+.seven-to-thirteen {
+  transform: translate(-310px, 310px); }
+
+.seven-to-fourteen {
+  transform: translate(-155px, 310px); }
+
+.seven-to-fifteen {
+  transform: translate(0px, 310px); }
+
+.eight-to-zero {
+  transform: translate(0px, -310px); }
+
+.eight-to-one {
+  transform: translate(155px, -310px); }
+
+.eight-to-two {
+  transform: translate(310px, -310px); }
+
+.eight-to-three {
+  transform: translate(465px, -310px); }
+
+.eight-to-four {
+  transform: translate(0px, -155px); }
+
+.eight-to-five {
+  transform: translate(155px, -155px); }
+
+.eight-to-six {
+  transform: translate(310px, -155px); }
+
+.eight-to-seven {
+  transform: translate(465px, -155px); }
+
+.eight-to-eight {
+  transform: translate(0px, 0px); }
+
+.eight-to-nine {
+  transform: translate(155px, 0px); }
+
+.eight-to-ten {
+  transform: translate(310px, 0px); }
+
+.eight-to-eleven {
+  transform: translate(465px, 0px); }
+
+.eight-to-twelve {
+  transform: translate(0px, 155px); }
+
+.eight-to-thirteen {
+  transform: translate(155px, 155px); }
+
+.eight-to-fourteen {
+  transform: translate(310px, 155px); }
+
+.eight-to-fifteen {
+  transform: translate(465px, 155px); }
+
+.nine-to-zero {
+  transform: translate(-155px, -310px); }
+
+.nine-to-one {
+  transform: translate(0px, -310px); }
+
+.nine-to-two {
+  transform: translate(155px, -310px); }
+
+.nine-to-three {
+  transform: translate(310px, -310px); }
+
+.nine-to-four {
+  transform: translate(-155px, -155px); }
+
+.nine-to-five {
+  transform: translate(0px, -155px); }
+
+.nine-to-six {
+  transform: translate(155px, -155px); }
+
+.nine-to-seven {
+  transform: translate(310px, -155px); }
+
+.nine-to-eight {
+  transform: translate(-155px, 0px); }
+
+.nine-to-nine {
+  transform: translate(0px, 0px); }
+
+.nine-to-ten {
+  transform: translate(155px, 0px); }
+
+.nine-to-eleven {
+  transform: translate(310px, 0px); }
+
+.nine-to-twelve {
+  transform: translate(-155px, 155px); }
+
+.nine-to-thirteen {
+  transform: translate(0px, 155px); }
+
+.nine-to-fourteen {
+  transform: translate(155px, 155px); }
+
+.nine-to-fifteen {
+  transform: translate(310px, 155px); }
+
+.ten-to-zero {
+  transform: translate(-310px, -310px); }
+
+.ten-to-one {
+  transform: translate(-155px, -310px); }
+
+.ten-to-two {
+  transform: translate(0px, -310px); }
+
+.ten-to-three {
+  transform: translate(155px, -310px); }
+
+.ten-to-four {
+  transform: translate(-310px, -155px); }
+
+.ten-to-five {
+  transform: translate(-155px, -155px); }
+
+.ten-to-six {
+  transform: translate(0px, -155px); }
+
+.ten-to-seven {
+  transform: translate(155px, -155px); }
+
+.ten-to-eight {
+  transform: translate(-310px, 0px); }
+
+.ten-to-nine {
+  transform: translate(-155px, 0px); }
+
+.ten-to-ten {
+  transform: translate(0px, 0px); }
+
+.ten-to-eleven {
+  transform: translate(155px, 0px); }
+
+.ten-to-twelve {
+  transform: translate(-310px, 155px); }
+
+.ten-to-thirteen {
+  transform: translate(-155px, 155px); }
+
+.ten-to-fourteen {
+  transform: translate(0px, 155px); }
+
+.ten-to-fifteen {
+  transform: translate(155px, 155px); }
+
+.eleven-to-zero {
+  transform: translate(-465px, -310px); }
+
+.eleven-to-one {
+  transform: translate(-310px, -310px); }
+
+.eleven-to-two {
+  transform: translate(-155px, -310px); }
+
+.eleven-to-three {
+  transform: translate(0px, -310px); }
+
+.eleven-to-four {
+  transform: translate(-465px, -155px); }
+
+.eleven-to-five {
+  transform: translate(-310px, -155px); }
+
+.eleven-to-six {
+  transform: translate(-155px, -155px); }
+
+.eleven-to-seven {
+  transform: translate(0px, -155px); }
+
+.eleven-to-eight {
+  transform: translate(-465px, 0px); }
+
+.eleven-to-nine {
+  transform: translate(-310px, 0px); }
+
+.eleven-to-ten {
+  transform: translate(-155px, 0px); }
+
+.eleven-to-eleven {
+  transform: translate(0px, 0px); }
+
+.eleven-to-twelve {
+  transform: translate(-465px, 155px); }
+
+.eleven-to-thirteen {
+  transform: translate(-310px, 155px); }
+
+.eleven-to-fourteen {
+  transform: translate(-155px, 155px); }
+
+.eleven-to-fifteen {
+  transform: translate(0px, 155px); }
+
+.twelve-to-zero {
+  transform: translate(0px, -465px); }
+
+.twelve-to-one {
+  transform: translate(155px, -465px); }
+
+.twelve-to-two {
+  transform: translate(310px, -465px); }
+
+.twelve-to-three {
+  transform: translate(465px, -465px); }
+
+.twelve-to-four {
+  transform: translate(0px, -310px); }
+
+.twelve-to-five {
+  transform: translate(155px, -310px); }
+
+.twelve-to-six {
+  transform: translate(310px, -310px); }
+
+.twelve-to-seven {
+  transform: translate(465px, -310px); }
+
+.twelve-to-eight {
+  transform: translate(0px, -155px); }
+
+.twelve-to-nine {
+  transform: translate(155px, -155px); }
+
+.twelve-to-ten {
+  transform: translate(310px, -155px); }
+
+.twelve-to-eleven {
+  transform: translate(465px, -155px); }
+
+.twelve-to-twelve {
+  transform: translate(0px, 0px); }
+
+.twelve-to-thirteen {
+  transform: translate(155px, 0px); }
+
+.twelve-to-fourteen {
+  transform: translate(310px, 0px); }
+
+.twelve-to-fifteen {
+  transform: translate(465px, 0px); }
+
+.thirteen-to-zero {
+  transform: translate(-155px, -465px); }
+
+.thirteen-to-one {
+  transform: translate(0px, -465px); }
+
+.thirteen-to-two {
+  transform: translate(155px, -465px); }
+
+.thirteen-to-three {
+  transform: translate(310px, -465px); }
+
+.thirteen-to-four {
+  transform: translate(-155px, -310px); }
+
+.thirteen-to-five {
+  transform: translate(0px, -310px); }
+
+.thirteen-to-six {
+  transform: translate(155px, -310px); }
+
+.thirteen-to-seven {
+  transform: translate(310px, -310px); }
+
+.thirteen-to-eight {
+  transform: translate(-155px, -155px); }
+
+.thirteen-to-nine {
+  transform: translate(0px, -155px); }
+
+.thirteen-to-ten {
+  transform: translate(155px, -155px); }
+
+.thirteen-to-eleven {
+  transform: translate(310px, -155px); }
+
+.thirteen-to-twelve {
+  transform: translate(-155px, 0px); }
+
+.thirteen-to-thirteen {
+  transform: translate(0px, 0px); }
+
+.thirteen-to-fourteen {
+  transform: translate(155px, 0px); }
+
+.thirteen-to-fifteen {
+  transform: translate(310px, 0px); }
+
+.fourteen-to-zero {
+  transform: translate(-310px, -465px); }
+
+.fourteen-to-one {
+  transform: translate(-155px, -465px); }
+
+.fourteen-to-two {
+  transform: translate(0px, -465px); }
+
+.fourteen-to-three {
+  transform: translate(155px, -465px); }
+
+.fourteen-to-four {
+  transform: translate(-310px, -310px); }
+
+.fourteen-to-five {
+  transform: translate(-155px, -310px); }
+
+.fourteen-to-six {
+  transform: translate(0px, -310px); }
+
+.fourteen-to-seven {
+  transform: translate(155px, -310px); }
+
+.fourteen-to-eight {
+  transform: translate(-310px, -155px); }
+
+.fourteen-to-nine {
+  transform: translate(-155px, -155px); }
+
+.fourteen-to-ten {
+  transform: translate(0px, -155px); }
+
+.fourteen-to-eleven {
+  transform: translate(155px, -155px); }
+
+.fourteen-to-twelve {
+  transform: translate(-310px, 0px); }
+
+.fourteen-to-thirteen {
+  transform: translate(-155px, 0px); }
+
+.fourteen-to-fourteen {
+  transform: translate(0px, 0px); }
+
+.fourteen-to-fifteen {
+  transform: translate(155px, 0px); }
+
+.fifteen-to-zero {
+  transform: translate(-465px, -465px); }
+
+.fifteen-to-one {
+  transform: translate(-310px, -465px); }
+
+.fifteen-to-two {
+  transform: translate(-155px, -465px); }
+
+.fifteen-to-three {
+  transform: translate(0px, -465px); }
+
+.fifteen-to-four {
+  transform: translate(-465px, -310px); }
+
+.fifteen-to-five {
+  transform: translate(-310px, -310px); }
+
+.fifteen-to-six {
+  transform: translate(-155px, -310px); }
+
+.fifteen-to-seven {
+  transform: translate(0px, -310px); }
+
+.fifteen-to-eight {
+  transform: translate(-465px, -155px); }
+
+.fifteen-to-nine {
+  transform: translate(-310px, -155px); }
+
+.fifteen-to-ten {
+  transform: translate(-155px, -155px); }
+
+.fifteen-to-eleven {
+  transform: translate(0px, -155px); }
+
+.fifteen-to-twelve {
+  transform: translate(-465px, 0px); }
+
+.fifteen-to-thirteen {
+  transform: translate(-310px, 0px); }
+
+.fifteen-to-fourteen {
+  transform: translate(-155px, 0px); }
+
+.fifteen-to-fifteen {
+  transform: translate(0px, 0px); }
+
+/*# sourceMappingURL=animation.css.map */

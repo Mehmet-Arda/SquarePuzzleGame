@@ -1,0 +1,187 @@
+$croppedImagesWidthHeight: 155;
+
+
+$className: "";
+$from: "";
+$to: "";
+
+.common-animation {
+    transition: transform 1s ease-in-out;
+    /* transition-delay: 2s; */
+}
+
+
+@function ClassNameCreator($data) {
+
+    $result: "";
+
+    @if $data==0 {
+        $result: "zero";
+        @return $result;
+    }
+
+    @if $data==1 {
+        $result: "one";
+        @return $result;
+    }
+
+    @if $data==2 {
+        $result: "two";
+        @return $result;
+    }
+
+    @if $data==3 {
+        $result: "three";
+        @return $result;
+    }
+
+    @if $data==4 {
+        $result: "four";
+        @return $result;
+    }
+
+    @if $data==5 {
+        $result: "five";
+        @return $result;
+    }
+
+    @if $data==6 {
+        $result: "six";
+        @return $result;
+    }
+
+    @if $data==7 {
+        $result: "seven";
+        @return $result;
+    }
+
+    @if $data==8 {
+        $result: "eight";
+        @return $result;
+    }
+
+    @if $data==9 {
+        $result: "nine";
+        @return $result;
+    }
+
+    @if $data==10 {
+        $result: "ten";
+        @return $result;
+    }
+
+    @if $data==11 {
+        $result: "eleven";
+        @return $result;
+    }
+
+    @if $data==12 {
+        $result: "twelve";
+        @return $result;
+    }
+
+    @if $data==13 {
+        $result: "thirteen";
+        @return $result;
+    }
+
+    @if $data==14 {
+        $result: "fourteen";
+        @return $result;
+    }
+
+    @if $data==15 {
+        $result: "fifteen";
+        @return $result;
+    }
+
+
+
+
+
+
+}
+
+
+@function Difference($w, $Floor) {
+
+    @if $Floor==1 {
+        @return $w - 0;
+    }
+
+    @if $Floor==2 {
+        @return $w - 4;
+    }
+
+    @if $Floor==3 {
+        @return $w - 8;
+    }
+
+    @if $Floor==4 {
+        @return $w - 12;
+    }
+
+
+}
+
+
+@for $i from 0 through 15 {
+
+    @for $j from 0 through 15 {
+
+        $from: ClassNameCreator($i);
+        $to: ClassNameCreator($j);
+
+        $x: 0;
+        $y: 0;
+
+        @if $i !=$j {
+
+            $iFloor: 0;
+            $jFloor: 0;
+
+
+            $iFloor: ceil(($i + 1)/4);
+
+            $jFloor: ceil(($j + 1)/4);
+
+            $y: ($iFloor - $jFloor)*(-1)*$croppedImagesWidthHeight;
+
+
+            $iDifference: 0;
+            $jDifference: 0;
+
+            $iDifference: Difference($i, $iFloor);
+            $jDifference: Difference($j, $jFloor);
+
+
+            $x: ($iDifference - $jDifference)*(-1)*$croppedImagesWidthHeight;
+
+
+
+            .#{$from}-to-#{$to} {
+                @extend .common-animation;
+
+                transform:translate(#{$x}px, #{$y}px);
+
+            }
+
+
+        }
+
+        @else {
+
+            $x: 0;
+            $y: 0;
+
+            .#{$from}-to-#{$to} {
+                @extend .common-animation;
+
+                transform:translate(#{$x}px, #{$y}px);
+
+            }
+
+        }
+    }
+
+}
