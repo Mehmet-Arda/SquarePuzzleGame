@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 
 
 
-app.route("/square_puzzle_game")
+app.route("/")
     .get((req, res) => {
 
         res.render("index");
