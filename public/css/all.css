@@ -334,7 +334,7 @@ input:focus {
         background: linear-gradient(45deg, #22C55E, #65A30D, #65A30D);
     }
 
-   
+
     100% {
         background: linear-gradient(45deg, #60A5FA, #2563EB, #1D4ED8);
     }
@@ -355,7 +355,7 @@ input:focus {
 
 
 .game-area-container.position-false::before,
-.game-area-container.position-false::after{
+.game-area-container.position-false::after {
 
     content: '';
     position: absolute;
@@ -1237,8 +1237,9 @@ input:focus {
 .wrapper .header {
 
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 400px;
     text-align: center;
     font-size: 26px;

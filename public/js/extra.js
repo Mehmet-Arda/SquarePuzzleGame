@@ -94,6 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Kullanıcı adını yeniden girme kısmına dönme
     backtoUsernameInputBtn.click(() => {
+
+        $(".wrapper .header").css({ "top": "80px", "left": "50%", "transform": "translate(-50%, -50%)" });
+
         imageInputContainer.fadeOut(() => {
 
             $(".welcome-form-container").css({ "min-height": "430px" });
@@ -352,8 +355,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             $(".welcome-form-container").removeClass("valid");
 
+            $(".wrapper .header").css({ "top": "30px", "left": "30px", "transform": "translate(0, 0)" });
+            
             usernameRemembermeContainer.fadeOut(300, () => {
-
 
                 $(".welcome-form-container").css({ "min-height": "560px" });
 
