@@ -1503,14 +1503,14 @@ input:focus {
 .welcome-section .welcome-form-container.valid::before,
 .welcome-section .welcome-form-container.valid::after {
 
-    background: conic-gradient(from var(--gradient-angle), #14532D, #14532D, #22C55E, #14532D);
+    background: conic-gradient(from var(--gradient-angle), #16A34A, #16A34A, #22C55E, #16A34A);
 
 }
 
 .welcome-section .welcome-form-container.invalid::before,
 .welcome-section .welcome-form-container.invalid::after {
 
-    background: conic-gradient(from var(--gradient-angle), #7F1D1D, #7F1D1D, #EF4444, #7F1D1D);
+    background: conic-gradient(from var(--gradient-angle), #DC2626, #DC2626, #EF4444, #DC2626);
 
 }
 
