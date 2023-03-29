@@ -81,7 +81,7 @@ input:focus {
 .game-section {
 
     position: relative;
-    
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -130,6 +130,7 @@ input:focus {
 
     height: 230px;
     padding-bottom: 8px;
+    width: 230px;
 
     margin-bottom: 21px;
 
@@ -138,6 +139,7 @@ input:focus {
 
 .left-side-bar:nth-child(2) {
     height: 130px;
+    width: 230px;
 }
 
 
@@ -261,7 +263,8 @@ input:focus {
 
 
 
-.game-area-container::before {
+.game-area-container::before,
+.game-area-container::after {
 
     content: '';
     position: absolute;
@@ -273,13 +276,6 @@ input:focus {
 }
 
 .game-area-container::after {
-
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
 
     filter: blur(30px);
 }
@@ -288,7 +284,7 @@ input:focus {
 .game-area-container::after {
     border-radius: 3px;
     z-index: -11;
-    background: linear-gradient(45deg, #60A5FA, #1D4ED8, #1E40AF);
+    background: linear-gradient(45deg, #60A5FA, #2563EB, #1D4ED8);
 }
 
 
@@ -299,7 +295,8 @@ input:focus {
 
 
 
-.game-area-container.position-correct::before {
+.game-area-container.position-correct::before,
+.game-area-container.position-correct::after {
 
     content: '';
     position: absolute;
@@ -318,19 +315,7 @@ input:focus {
 
 .game-area-container.position-correct::after {
 
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-
     filter: blur(30px);
-
-    animation-name: correct-animation;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
 
 }
 
@@ -349,12 +334,9 @@ input:focus {
         background: linear-gradient(45deg, #22C55E, #65A30D, #65A30D);
     }
 
-    /*   80% {
-        background: linear-gradient(45deg, #22C55E, #15803D, #15803D);
-    }
- */
+   
     100% {
-        background: linear-gradient(45deg, #60A5FA, #1D4ED8, #1E40AF);
+        background: linear-gradient(45deg, #60A5FA, #2563EB, #1D4ED8);
     }
 
 
@@ -372,7 +354,8 @@ input:focus {
 
 
 
-.game-area-container.position-false::before {
+.game-area-container.position-false::before,
+.game-area-container.position-false::after{
 
     content: '';
     position: absolute;
@@ -391,19 +374,9 @@ input:focus {
 
 .game-area-container.position-false::after {
 
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
 
     filter: blur(30px);
 
-    animation-name: false-animation;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
 
 }
 
@@ -427,7 +400,7 @@ input:focus {
     } */
 
     100% {
-        background: linear-gradient(45deg, #60A5FA, #1D4ED8, #1E40AF);
+        background: linear-gradient(45deg, #60A5FA, #2563EB, #1D4ED8);
     }
 
 
@@ -439,14 +412,14 @@ input:focus {
 
 
 
-
 /* 
+
 .game-area-container::before,
 .game-area-container::after {
 
     content: '';
     position: absolute;
-    inset: -.2rem;
+    inset: -.2rem; 
     transition: all 1s linear;
 
     z-index: -1;
@@ -455,10 +428,10 @@ input:focus {
 
     animation: game-area-container-border-rotation-animation 3s linear infinite;
 
-}
+}  */
 
 
-.game-area-container.valid::before,
+/* .game-area-container.valid::before,
 .game-area-container.valid::after {
 
     background: conic-gradient(from var(--gradient-angle-game-area-container), #14532D, #14532D, #22C55E, #14532D);
@@ -470,17 +443,17 @@ input:focus {
 
     background: conic-gradient(from var(--gradient-angle-game-area-container), #7F1D1D, #7F1D1D, #EF4444, #7F1D1D);
 
-}
+} */
 
-
+/* 
 .game-area-container::after {
 
     filter: blur(3.5rem);
 
-}
+} */
 
 
-
+/* 
 
 @keyframes game-area-container-border-rotation-animation {
 
@@ -492,15 +465,7 @@ input:focus {
         --gradient-angle-game-area-container: 360deg;
     }
 
-}
- */
-
-
-
-
-
-
-
+} */
 
 
 
@@ -1272,10 +1237,11 @@ input:focus {
 .wrapper .header {
 
     position: absolute;
-    top: 130px;
-    width: 500px;
+    top: 30px;
+    left: 30px;
+    width: 400px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #fff;
@@ -1522,7 +1488,7 @@ input:focus {
 
 
 
-/* @keyframes welcome-form-border-rotation-animation {
+@keyframes welcome-form-border-rotation-animation {
 
     0% {
         --gradient-angle: 0deg;
@@ -1533,7 +1499,7 @@ input:focus {
     }
 
 }
- */
+
 
 
 .welcome-section .welcome-form-inner-container {

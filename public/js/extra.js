@@ -865,9 +865,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     gameIsStartingInfo.fadeIn(() => {
 
+                        $(".wrapper .header").hide();
+
+
                         gameIsStartingInfoText.delay(1800).fadeOut(() => {
                             gameIsStartingInfo.delay(600).fadeOut(() => {
-                                $(".wrapper .header").css({ "top": "60px" });
                             });
                         });
 
