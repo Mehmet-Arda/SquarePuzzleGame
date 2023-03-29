@@ -1571,6 +1571,8 @@ document.addEventListener("DOMContentLoaded", () => {
         //Oyun başladıktan sonra puan ve hamle sayısının her yer değiştirme sonrası güncellenmesi
         if (!$(".game-area").hasClass("game-mode-zero")) {
 
+
+
             $(".game-area-container").removeClass("position-correct");
             $(".game-area-container").removeClass("position-false");
 
@@ -1660,18 +1662,18 @@ document.addEventListener("DOMContentLoaded", () => {
     function croppedImagesPositionCorrectEvents(data) {
 
 
-        /*  if (!$(".game-area").hasClass("game-mode-zero")) {
- 
-             console.log("doğru hamle yapıldı");
-             gamePoint = gamePoint + 5;
- 
-             $(".point").text(gamePoint);
-         } */
+        if (!$(".game-area").hasClass("game-mode-zero")) {
 
-        console.log("doğru hamle yapıldı");
-        gamePoint = gamePoint + 5;
 
-        $(".left-side-bar .point").text(gamePoint);
+
+            console.log("doğru hamle yapıldı");
+            gamePoint = gamePoint + 5;
+
+            $(".left-side-bar .point").text(gamePoint);
+
+        }
+
+
 
 
 
@@ -1693,7 +1695,7 @@ document.addEventListener("DOMContentLoaded", () => {
         /*  $(".cropped-image").eq(data).addClass("gray-scale-off");*/
 
         //Pozisyonu doğru olan görsellerin sayısı 16 ise oyun sonunun tespiti
-        if ($(".cropped-image-container.position-correct").length == 6) {
+        if ($(".cropped-image-container.position-correct").length == 16) {
 
             console.log("\n******oyun bitti******");
 
@@ -1996,7 +1998,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 $(".game-area").hasClass("game-mode-zero") ? $(".game-area").removeClass("game-mode-zero") : "";
 
 
-
+                gamePoint = $(".cropped-image-container.position-correct").length * 5;
+                $(".left-side-bar .point").text(gamePoint);
 
                 $(".game-button-shuffle").hasClass("disabled-button") ? "" : $(".game-button-shuffle").addClass("disabled-button");
 
