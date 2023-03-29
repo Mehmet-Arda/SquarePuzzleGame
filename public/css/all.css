@@ -86,9 +86,7 @@ input:focus {
 .game-section {
 
     position: relative;
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, .1);
-
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
