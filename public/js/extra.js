@@ -1701,7 +1701,7 @@ document.addEventListener("DOMContentLoaded", () => {
         /*  $(".cropped-image").eq(data).addClass("gray-scale-off");*/
 
         //Pozisyonu doğru olan görsellerin sayısı 16 ise oyun sonunun tespiti
-        if ($(".cropped-image-container.position-correct").length == 16) {
+        if ($(".cropped-image-container.position-correct").length == 4) {
 
             console.log("\n******oyun bitti******");
 
