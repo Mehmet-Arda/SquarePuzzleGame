@@ -10,41 +10,64 @@ Proje, temelinde sunucu tarafında NodeJS, ön yüz tarafında ise Vanilla Javas
 
 ## Çekirdek Teknolojiler
 
--[NodeJS](https://nodejs.org/en)
+- [NodeJS](https://nodejs.org/en)
 
--[Javascript-ES6](http://es6-features.org/#Constants)
+- [Javascript-ES6](http://es6-features.org/#Constants)
 
--[Node Package Manager-NPM](https://www.npmjs.com/)
+- [Node Package Manager-NPM](https://www.npmjs.com/)
 
 ## Gerekli Kütüphaneler
 
--[JQuery](https://jquery.com/)
+- [JQuery](https://jquery.com/)
 
--[Bootstrap](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
--[SASS](https://sass-lang.com/)
+- [SASS](https://sass-lang.com/)
 
--[Font Awesome](https://fontawesome.com/)
+- [Font Awesome](https://fontawesome.com/)
 
--[Google Fonts](https://fonts.google.com/)
+- [Google Fonts](https://fonts.google.com/)
 
--[CropperJS](https://github.com/fengyuanchen/cropperjs)
+- [CropperJS](https://github.com/fengyuanchen/cropperjs)
 
--[ExpressJS](https://expressjs.com/)
+- [ExpressJS](https://expressjs.com/)
 
--[Body Parser](http://expressjs.com/en/resources/middleware/body-parser.html)
+- [Body Parser](http://expressjs.com/en/resources/middleware/body-parser.html)
 
--[CORS](https://expressjs.com/en/resources/middleware/cors.html)
+- [CORS](https://expressjs.com/en/resources/middleware/cors.html)
 
 
 ## Dağıtım
 
--[Cyclic Cloud Platform](https://www.cyclic.sh/)
+- [Cyclic Cloud Platform](https://www.cyclic.sh/)
 
 ## Geliştirme
 
--[Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Uygulama Özellikleri/Kullanımı
+
+- **Kullanıcı Adı Girme**
+
+- **Kullanıcı Adı Girme**
+
+- **Kullanıcı Adı Girme**
+
+
+- **Kullanıcı Adı Girme**
+
+
+- **Kullanıcı Adı Girme**
+
+
+- **Kullanıcı Adı Girme**
+
+
+
+
+
+
+
+
 
 
