@@ -72,7 +72,7 @@ app.route("/square_puzzle_game")
 
                             if (err) {
                                 console.log("Yazma işleminde hata.");
-                                res.send({ response: "error" })
+                                res.send({ response: "error", error: err })
                             } else {
                                 res.send({ response: "Tebrikler yeni en yüksek puan" });
                             }
@@ -101,7 +101,7 @@ app.route("/square_puzzle_game")
                     fs.writeFile("highestscore.txt", JSON.stringify(usersinfo), err => {
                         if (err) {
                             console.log("Yazma işleminde hata.");
-                            res.send({ response: "error" })
+                            res.send({ response: "error", error: err })
                         } else {
                             res.send({ response: "Tebrikler ilk kayıtlı puan" });
                         }

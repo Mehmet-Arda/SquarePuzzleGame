@@ -1867,6 +1867,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 else if (res.response == "error") {
                     console.log("Yazdırma işleminde hata");
+                    console.log(res.error);
                 }
 
 
