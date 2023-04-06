@@ -169,6 +169,9 @@ app.route("/get_usersinfo").post((req, res) => {
 });
 
 
+app.route("/").get((req,res)=>{
+    res.render("index");
+})
 
 
 app.listen(process.env.PORT || port, () => {

@@ -1858,9 +1858,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 console.log(res.response);
 
-                if (res.response == "Tebrikler yeni en yüksek puan" || res.response == "Tebrikler ilk kayıtlı puan") {
+                if (res.response == "Tebrikler yeni en yüksek puan") {
 
                     gameOverPointText.text("Yeni En Yüksek Puan! : ");
+                }
+                else if(res.response == "Tebrikler ilk kayıtlı puan"){
+                    gameOverPointText.text("Tebrikler ilk kayıtlı puan ! :");
                 }
 
 
