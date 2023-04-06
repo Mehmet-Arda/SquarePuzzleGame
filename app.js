@@ -41,7 +41,7 @@ app.route("/square_puzzle_game")
 
         let i;
 
-        fs.readFile("highestscore.txt", "utf8", (err, data) => {
+        fs.readFile("/tmp/highestscore.txt", "utf8", (err, data) => {
 
             if (data != undefined) {
 
@@ -68,7 +68,7 @@ app.route("/square_puzzle_game")
                             return b.Point - a.Point;
                         });
 
-                        fs.writeFile("highestscore.txt", JSON.stringify(usersinfo), err => {
+                        fs.writeFile("/tmp/highestscore.txt", JSON.stringify(usersinfo), err => {
 
                             if (err) {
                                 console.log("Yazma işleminde hata.");
@@ -98,7 +98,7 @@ app.route("/square_puzzle_game")
 
 
 
-                    fs.writeFile("highestscore.txt", JSON.stringify(usersinfo), err => {
+                    fs.writeFile("/tmp/highestscore.txt", JSON.stringify(usersinfo), err => {
                         if (err) {
                             console.log("Yazma işleminde hata.");
                             res.send({ response: "error", error: err })
@@ -126,7 +126,7 @@ app.route("/square_puzzle_game")
 
                 res.send({ response: "Tebrikler ilk kayıtlı puan" });
 
-                fs.writeFile("highestscore.txt", JSON.stringify(usersinfo), err => {
+                fs.writeFile("/tmp/highestscore.txt", JSON.stringify(usersinfo), err => {
                     if (err)
                         console.log("Yazma işleminde hata.");
 
