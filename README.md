@@ -54,11 +54,17 @@ Proje, temelinde sunucu tarafında NodeJS, ön yüz tarafında ise Vanilla Javas
 
 - **Kullanıcı Adı Girme**
 
-Kullanıcı uygulamaya ilk girdiğinde öncelikle kullanıcı adını girmektedir.
+Uygulamaya açıldığında öncelikle kullanıcı adı girilmektedir.
+İsteğe bağlı "beni hatırla" seçeneğini işaretlenerek, sonraki girişte kullanıcı adı girme kısmı atlanarak önceki kayıtlı kullanıcı adıyla
+bir sonraki işleme geçilmektedir.
 
-![Kullanıcı Adı Girme]()
+![Kullanıcı Adı Girme](https://user-images.githubusercontent.com/56768017/230287707-40ea0b73-a821-41f5-8242-aa5cbafc4e95.png)
 
-- **Kullanıcı Adı Girme**
+
+- **Görsel Yükleme**
+
+
+
 
 - **Kullanıcı Adı Girme**
 
