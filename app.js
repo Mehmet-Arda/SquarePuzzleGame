@@ -152,7 +152,7 @@ app.route("/get_usersinfo").post((req, res) => {
 
     let currentUserInfo;
 
-    fs.readFile("highestscore.txt", "utf8", (err, data) => {
+    fs.readFile("/tmp/highestscore.txt", "utf8", (err, data) => {
 
         if (data != undefined) {
 
