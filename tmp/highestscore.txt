@@ -1,1 +1,0 @@
-[{"UserName":"MehmetAY","NumberOfMoves":"10","Point":"90"},{"UserName":"DontMakeKilicdarogluCandidate","NumberOfMoves":"12","Point":"80"},{"UserName":"Mehmet","NumberOfMoves":"6","Point":"35"},{"UserName":"WidowMaker","NumberOfMoves":"5","Point":"35"},{"UserName":"ABC","NumberOfMoves":"4","Point":"30"}]
