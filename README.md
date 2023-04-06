@@ -101,7 +101,7 @@ En az bir parça doğru yere geldiğinde oyun başlamakta ve karıştırma buton
 ![Oyunun Başlaması](https://user-images.githubusercontent.com/56768017/230291186-ace108d1-0b71-400b-a8c1-1ce2d9ff725a.png)
 
 
-4. **Oyunun Sonu**
+6. **Oyunun Sonu**
 
 Oyundaki tüm görseller doğru yere eşleştirildiğinde oyun sonlandırılmakta, kullanıcının bilgileri ilgili metin belgesine kaydedilmektedir.
 
