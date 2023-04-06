@@ -8,6 +8,8 @@ Kullanıcıdan başlangıçta dosya ya da url ile bir görsel alınarak, önce k
 Proje, temelinde sunucu tarafında NodeJS, ön yüz tarafında ise Vanilla Javascript ile JQuery teknolojilerine dayanmaktadır.
 
 
+
+
 ## Çekirdek Teknolojiler
 
 - [NodeJS](https://nodejs.org/en)
@@ -41,6 +43,9 @@ Proje, temelinde sunucu tarafında NodeJS, ön yüz tarafında ise Vanilla Javas
 
 - [Cyclic Cloud Platform](https://www.cyclic.sh/)
 
+- [Square Puzzle Game](https://nice-red-rooster-tutu.cyclic.app/square_puzzle_game)
+
+
 ## Geliştirme
 
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -48,6 +53,10 @@ Proje, temelinde sunucu tarafında NodeJS, ön yüz tarafında ise Vanilla Javas
 ## Uygulama Özellikleri/Kullanımı
 
 - **Kullanıcı Adı Girme**
+
+Kullanıcı uygulamaya ilk girdiğinde öncelikle kullanıcı adını girmektedir.
+
+![Kullanıcı Adı Girme]()
 
 - **Kullanıcı Adı Girme**
 
