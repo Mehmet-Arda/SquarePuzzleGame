@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         userRememberedWelcome.delay(1000).fadeOut(300, () => {
 
             $(".wrapper .header").css({ "top": "30px", "left": "80px", "transform": "translate(0, 0)" });
-            
+
             $(".welcome-form-container").css({ "min-height": "560px" });
 
             imageInputContainer.fadeIn(300);
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
             $(".welcome-form-container").removeClass("valid");
 
             $(".wrapper .header").css({ "top": "30px", "left": "80px", "transform": "translate(0, 0)" });
-            
+
             usernameRemembermeContainer.fadeOut(300, () => {
 
                 $(".welcome-form-container").css({ "min-height": "560px" });
@@ -1862,8 +1862,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     gameOverPointText.text("Yeni En Yüksek Puan! : ");
                 }
-                else if(res.response == "Tebrikler ilk kayıtlı puan"){
+                else if (res.response == "Tebrikler ilk kayıtlı puan") {
                     gameOverPointText.text("Tebrikler ilk kayıtlı puan ! :");
+                }
+                else if (res.response == "error") {
+                    console.log("Yazdırma işleminde hata");
                 }
 
 

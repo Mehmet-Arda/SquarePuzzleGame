@@ -70,12 +70,18 @@ app.route("/square_puzzle_game")
 
                         fs.writeFile("highestscore.txt", JSON.stringify(usersinfo), err => {
 
-                            if (err)
+                            if (err) {
                                 console.log("Yazma işleminde hata.");
+                                res.send({ response: "error" })
+                            } else {
+                                res.send({ response: "Tebrikler yeni en yüksek puan" });
+                            }
+
+
 
                         });
 
-                        res.send({ response: "Tebrikler yeni en yüksek puan" });
+
 
 
                     } else {
@@ -90,11 +96,17 @@ app.route("/square_puzzle_game")
                         return b.Point - a.Point;
                     });
 
-                    res.send({ response: "Tebrikler ilk kayıtlı puan" });
+
 
                     fs.writeFile("highestscore.txt", JSON.stringify(usersinfo), err => {
-                        if (err)
+                        if (err) {
                             console.log("Yazma işleminde hata.");
+                            res.send({ response: "error" })
+                        } else {
+                            res.send({ response: "Tebrikler ilk kayıtlı puan" });
+                        }
+
+
 
                     });
 
@@ -169,7 +181,7 @@ app.route("/get_usersinfo").post((req, res) => {
 });
 
 
-app.route("/").get((req,res)=>{
+app.route("/").get((req, res) => {
     res.render("index");
 })
 
