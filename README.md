@@ -36,6 +36,10 @@ Proje, temelinde sunucu tarafında NodeJS, ön yüz tarafında ise Vanilla Javas
 
 - [Body Parser](http://expressjs.com/en/resources/middleware/body-parser.html)
 
+- [File System](https://www.npmjs.com/package/file-system)
+
+- [Mongoose](https://mongoosejs.com/)
+
 - [CORS](https://expressjs.com/en/resources/middleware/cors.html)
 
 
