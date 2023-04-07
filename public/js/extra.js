@@ -38,9 +38,48 @@ document.addEventListener("DOMContentLoaded", () => {
                 $(".top-users-info .user-info-container").each(function (index) {
 
                     if (index <= 2) {
-                        $(this).find(".user-name").text(`${index + 1}- ${topUsersInfo[index].UserName}`);
-                        $(this).find(".number-of-movement").text(topUsersInfo[index].NumberOfMoves);
-                        $(this).find(".point").text(topUsersInfo[index].Point);
+
+
+                        if (topUsersInfo.length == 0) {
+
+                            $(this).find(".user-name").text(`${index + 1}-`);
+                            $(this).find(".number-of-movement").text("-");
+                            $(this).find(".point").text("-");
+
+                        } else if (topUsersInfo.length == 1) {
+
+                            if (index == 0) {
+                                $(this).find(".user-name").text(`${index + 1}- ${topUsersInfo[index].UserName}`);
+                                $(this).find(".number-of-movement").text(topUsersInfo[index].NumberOfMoves);
+                                $(this).find(".point").text(topUsersInfo[index].Point);
+
+                            } else if (index == 1 || index == 2) {
+                                $(this).find(".user-name").text(`${index + 1}-`);
+                                $(this).find(".number-of-movement").text("-");
+                                $(this).find(".point").text("-");
+                            }
+
+                        }
+                        else if (topUsersInfo.length == 2) {
+
+                            if (index == 0 || index == 1) {
+                                $(this).find(".user-name").text(`${index + 1}- ${topUsersInfo[index].UserName}`);
+                                $(this).find(".number-of-movement").text(topUsersInfo[index].NumberOfMoves);
+                                $(this).find(".point").text(topUsersInfo[index].Point);
+
+                            } else if (index == 2) {
+                                $(this).find(".user-name").text(`${index + 1}-`);
+                                $(this).find(".number-of-movement").text("-");
+                                $(this).find(".point").text("-");
+                            }
+
+                        } else {
+
+                            $(this).find(".user-name").text(`${index + 1}- ${topUsersInfo[index].UserName}`);
+                            $(this).find(".number-of-movement").text(topUsersInfo[index].NumberOfMoves);
+                            $(this).find(".point").text(topUsersInfo[index].Point);
+                        }
+
                     }
                     else if (index = 3) {
 
@@ -48,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         currentUserInfoContainer.fadeIn();
 
-                        if (currentUserInfo != undefined) {
+                        if (currentUserInfo != null) {
 
                             $(this).find(".user-name").text(currentUserInfo.UserName);
                             $(this).find(".number-of-movement").text(currentUserInfo.NumberOfMoves);
@@ -1701,7 +1740,7 @@ document.addEventListener("DOMContentLoaded", () => {
         /*  $(".cropped-image").eq(data).addClass("gray-scale-off");*/
 
         //Pozisyonu doğru olan görsellerin sayısı 16 ise oyun sonunun tespiti
-        if ($(".cropped-image-container.position-correct").length == 4) {
+        if ($(".cropped-image-container.position-correct").length == 16) {
 
             console.log("\n******oyun bitti******");
 

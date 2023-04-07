@@ -1286,7 +1286,7 @@ input:focus {
 
     font-size: 19px;
     border-bottom: 1px solid #94A3B8;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     font-weight: 600;
 }
 
@@ -1305,7 +1305,7 @@ input:focus {
 
 .top-users-info .user-info-container {
 
-    margin-bottom: 23px;
+    margin-bottom: 6px;
 
 
     border-bottom: 1px solid #94A3B8;
