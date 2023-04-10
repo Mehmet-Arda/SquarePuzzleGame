@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             $(".welcome-form-container").css({ "min-height": "560px" });
 
-            imageInputContainer.fadeIn(300);
+            imageInputContainer.delay(400).fadeIn();
 
             getAndSetGameStatistics();
 
