@@ -1854,7 +1854,7 @@ input:focus {
     padding: 8px 10px;
     margin-left: auto;
 
-    margin-top: 6px;
+    margin-top: 3px;
 
     color: white;
     background: #16A34A;
@@ -1977,6 +1977,8 @@ input:focus {
     font-size: 16px;
 
     height: 30px;
+
+    margin-bottom: 13px;
 
 }
 
