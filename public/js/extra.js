@@ -134,6 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //Kullanıcı adını yeniden girme kısmına dönme
     backtoUsernameInputBtn.click(() => {
 
+        $(".image-input-validation").text("");
+        $(".welcome-form-container .image-input-container .username-input-box").removeClass("invalid");
+
         $(".wrapper .header").css({ "top": "80px", "left": "50%", "transform": "translate(-50%, -50%)" });
 
         imageInputContainer.fadeOut(() => {
@@ -1632,6 +1635,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log("yanlış hamle yapıldı");
                 gamePoint = gamePoint - 10;
 
+                if (gamePoint < 0) {
+                    $(".left-side-bar .point").css({ "color": "red" });
+                } else {
+                    $(".left-side-bar .point").css({ "color": "#07d410" });
+                }
+
                 $(".left-side-bar .point").text(gamePoint);
 
             }
@@ -1713,6 +1722,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             console.log("doğru hamle yapıldı");
             gamePoint = gamePoint + 5;
+
+            if (gamePoint < 0) {
+                $(".left-side-bar .point").css({ "color": "red" });
+            } else {
+                $(".left-side-bar .point").css({ "color": "#07d410" });
+            }
 
             $(".left-side-bar .point").text(gamePoint);
 
